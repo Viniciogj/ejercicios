@@ -1,0 +1,305 @@
+/* *{
+    border: 1px solid red;
+} */
+
+html, body{
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container{
+    margin: 0 auto;
+    background: rgb(228, 228, 228);
+
+}
+
+
+/* Encabezado */
+
+header{
+    margin: 0 auto;
+    background-color: #273B47;
+    color: #fff;
+    
+}
+
+.header-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 1300px;
+}
+
+.logo{
+    height: 30px;
+    padding: 12px 0;
+}
+
+nav{
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li{
+    border-right: 1px solid #fff;
+}
+
+nav li a{
+    color: inherit;
+    text-decoration: none;
+    padding: 12px 10px;
+    letter-spacing: 1px;
+}
+
+nav li a:hover{
+    border-top: 5px solid #67B030;
+}
+
+button{
+    border: 0;
+    padding: 9px;
+    background: #FF4842;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: #67B030;
+}
+
+
+/* Campo de búsqueda */
+form{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 0;
+    position: absolute;
+    right: 20px;
+}
+
+#search{
+    height: 100%;
+    font-size: 18px;
+    color: gray;
+    font-weight: lighter;
+    padding: 11px 10px;
+    margin-right: 15px;
+    width: 240px;
+}
+
+.search-button{
+    height: 30px;
+    padding: 8px;
+    border-radius: 10%;
+    background-color: silver;
+    font-weight: lighter;
+    transition: .75s;
+}
+
+.search-button:hover{
+    background-color: #fff;
+
+}
+
+
+
+
+/* Post principal */
+
+.principal-container{
+    margin: 0 auto;
+    position: relative;
+    max-width: 1250px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.img-principal{
+    width: 100%;
+    padding-top: -50%;
+}
+
+
+
+.text-principal{
+    position: absolute;
+    background: silver;
+    left: 30px;
+    bottom: 30px;
+    padding: 30px;
+    color: #273B47;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+
+.info{
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.info p{
+    margin: 0;
+}
+
+.info img{
+    height: 35px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Post pequeños */
+
+/* Flexbox para ajustar siempre hasta abajo del div el .text-small */
+.post-container{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+
+
+    padding: 25px 0;
+    /* transition: .5s; */
+}
+/* Flexbox para ajustar siempre hasta abajo del div el .text-small FIN */
+
+
+.content-img{
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-img img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #273B47;
+    position: relative;
+
+}
+
+.content-img img{
+    width: 100%;
+}
+
+.content-img img:hover{
+    opacity: .8;
+}
+
+.text-small{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-art{
+    background-color: rgb(243, 241, 241);
+    width: 100%;
+}
+
+.articulos{
+    margin: 0 auto;
+    padding: 25px 0;
+    position: relative;
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-container h2, .post-container .text-small{
+    padding: 0 15px;
+}
+
+
+.text-small{
+    border-top: 1px solid gray;
+    bottom: 0;
+}
+
+.num-pag{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 21px;
+
+}
+
+.num-pag ul{
+    margin: 0;
+    padding-left: 12px;
+}
+
+.num-pag li{
+    margin: 0 8px;
+    background: #eaeaea;
+    height: 50px;
+    border: 1px solid gray;
+}
+
+.num-pag li.current-page{
+    background: none;
+    border: 1px solid silver;
+}
+
+.num-pag a{
+    padding: 0 10px;
+    height: inherit;
+    line-height: 50px;
+
+}
+
+.num-pag li:hover{
+    background: none;
+}
+
+
+@media only screen and (max-width: 868px) {
+    .post-container{
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .post-container{
+        width: 100%;
+    }
+}
+
+
