@@ -137,8 +137,7 @@ form{
 
 .text-principal{
     position: absolute;
-    background: silver;
-    left: 30px;
+    background: rgba(255, 255, 255, 0.7)    left: 30px;
     bottom: 30px;
     padding: 30px;
     color: #273B47;
