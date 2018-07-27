@@ -1,0 +1,47 @@
+html, body, .container{
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+
+header{
+    margin: 0 auto;
+    background-color: #273B47;
+    color: #fff;
+    height: 50px;
+    width: 100%
+}
+
+.content{
+    flex: 1 0 auto;
+
+
+    margin-top: 50px;
+
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background: rgb(26, 36, 43);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+h1, p{
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+
+}
