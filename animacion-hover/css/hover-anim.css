@@ -1,0 +1,49 @@
+html, body{
+    perspective: 300px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.fondo{
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/b35.jpg");
+    background-size: 100%;
+    background-position: 50%;
+    transition: .3s;
+    border: 0px solid aqua;
+
+}
+
+.text-container{
+    width: 200px;
+    background: white;
+    color: gray;
+    padding: 20px;
+    cursor: pointer;
+    transform: rotateZ(45deg);
+    transition: .3s;
+    opacity: 0;
+
+
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fondo:hover{
+    background-size: 110%;
+    border: 10px solid #518fcc;
+    height: calc(100% - 20px);
+}
+
+.fondo:hover .text-container{
+    transform: rotateZ(0deg);
+    opacity: 1;
+
+}
